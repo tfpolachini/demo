@@ -6,11 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GoodbyeCruelWorld {
 
-	@GetMapping("/love")
-	public String goodbyeMyLove() {
-		return "Goodbye my love!";
-	}
-	
 	@GetMapping("/world")
 	public String goodbyeCruelWorld() {
 		return "Goodbye cruel world!";
@@ -19,5 +14,10 @@ public class GoodbyeCruelWorld {
 	@GetMapping("/friends")
 	public String goodbyeMyFriends() {
 		return "Goodbye my friends!";
+	}
+	
+	@GetMapping("/love")
+	public String goodbyeMyLove() {
+		return "Goodbye my love!";
 	}
 }
