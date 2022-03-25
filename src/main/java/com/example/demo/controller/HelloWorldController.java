@@ -5,7 +5,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloWorldController {
-
+    
+    @GetMapping("/friend")
+    public String helloMyFriends() {
+        return "Hello my friends";
+    }
+    
+    @GetMapping("/love")
+    public String helloMyLove() {
+        return "Hello my love";
+    }
+    
     @GetMapping("/hello")
     public String helloWorld() {
         return "Hello World";
